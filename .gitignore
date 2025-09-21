@@ -11,3 +11,7 @@ npm-debug.log*
 
 # Drizzle ORM
 drizzle/meta/
+
+*.httpie
+
+WARP.md
