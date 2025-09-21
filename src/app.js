@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import authRoutes from '#routes/auth.routes.js';
+import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
 
@@ -21,6 +22,8 @@ app.use(
     stream: { write: msg => logger.info(msg.trim()) },
   })
 );
+
+app.use(securityMiddleware)
 
 app.get('/', (req, res) => {
   logger.info('Hello From Logger');
