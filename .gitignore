@@ -1,6 +1,10 @@
 node_modules
 .env
+.env.local
 .neon_local/
+.env.development
+.env.production
+neon-local-config/
 public/readme/module-icon.webp
 public/readme/module-thumbnail.webp
 
@@ -15,3 +19,4 @@ drizzle/meta/
 *.httpie
 
 WARP.md
+README-DOCKER.md
